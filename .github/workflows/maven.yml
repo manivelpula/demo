@@ -41,7 +41,7 @@ jobs:
           name: mule-application
           path: target/*.jar
           
-      - name: Deploy Mule application to CloudHub 2.0
+      - name: Deploy Mule application to CloudHub 2.0 -DskipExchangePreDeploy=true \
         run: |
           mvn clean deploy -Pcloudhub-2.0 \
             -Danypoint.client_id=e85c250d7185443eaf380821bdd543c9 \
