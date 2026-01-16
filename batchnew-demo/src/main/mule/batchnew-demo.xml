@@ -1486,6 +1486,7 @@ payload]]></ee:set-payload>
 			</when>
 			<otherwise >
 				<logger level="INFO" doc:name="Logger" doc:id="ae9549aa-d6f3-4c08-aea2-30aa2fdba8dd" message='#["Mani":payload]'/>
+				<logger level="INFO" doc:name="Logger" doc:id="508c67a0-02ca-4cf8-beac-594fbb1f2dc3" />
 			</otherwise>
 		</choice>
 	</flow>
