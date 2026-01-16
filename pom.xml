@@ -103,7 +103,7 @@
                 <!-- Required -->
                 <applicationName>batchnew-demo</applicationName>
                 <runtimeVersion>4.9.12</runtimeVersion>
-                <environmentb20af>c88-ff74-418c-a940-eee7bfee0af8</environment>
+                <environment>b20afc88-ff74-418c-a940-eee7bfee0af8</environment>
 				   <businessGroup>c39dc6dd-e124-4390-867b-7b58e9d44727   </businessGroup>
                 <!-- <businessGroup>${anypoint.org}</businessGroup> -->
 
