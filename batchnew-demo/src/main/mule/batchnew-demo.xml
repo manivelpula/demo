@@ -1484,6 +1484,9 @@ payload]]></ee:set-payload>
 			<when expression="#[payload]">
 				<logger level="INFO" doc:name="Logger" doc:id="5224e624-119c-4222-9f8b-d5df90207d13" />
 			</when>
+			<otherwise >
+				<logger level="INFO" doc:name="Logger" doc:id="508c67a0-02ca-4cf8-beac-594fbb1f2dc3" />
+			</otherwise>
 		</choice>
 	</flow>
 </mule>
