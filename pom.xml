@@ -119,8 +119,8 @@
                                     <runtimeVersion>4.9.12</runtimeVersion>
                                     <environment>b20afc88-ff74-418c-a940-eee7bfee0af8</environment>
                                     <businessGroup>c39dc6dd-e124-4390-867b-7b58e9d44727</businessGroup>
-                                    <clientId>${anypoint.client_id}</clientId>
-                                    <clientSecret>${anypoint.client_secret}</clientSecret>
+                                    <clientId>93c4740ab19346578aba3ec930bcfd08</clientId>
+                                    <clientSecret>743aa3eba1094727B31c765654752dDB</clientSecret>
                                     <region>us-east-1</region>
                                     <replicas>1</replicas>
                                     <vCores>0.1</vCores>
@@ -150,10 +150,10 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <assetName>${project.name}</assetName>
-                            <assetVersion>${project.version}</assetVersion>
-                            <anypointUsername>${anypoint.username}</anypointUsername>
-                            <anypointPassword>${anypoint.password}</anypointPassword>
+                            <assetName>demo</assetName>
+                            <assetVersion>1.1.1</assetVersion>
+                            <anypointUsername>mani_jan2026</anypointUsername>
+                            <anypointPassword>Mani@123456</anypointPassword>
                             <assetType>application</assetType>
                         </configuration>
                     </plugin>
