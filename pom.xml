@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>batchnew-demo</artifactId>
+	<artifactId>demo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>batchnew-demo</name>
+	<name>demo</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -101,10 +101,10 @@
               <cloudHub2Deployment>
 
                 <!-- Required -->
-                <applicationName>batchnew-demo</applicationName>
+                <applicationName>demo</applicationName>
                 <runtimeVersion>4.9.12</runtimeVersion>
                 <environment>b20afc88-ff74-418c-a940-eee7bfee0af8</environment>
-				   <businessGroup>c39dc6dd-e124-4390-867b-7b58e9d44727   </businessGroup>
+				   <businessGroup>c39dc6dd-e124-4390-867b-7b58e9d44727</businessGroup>
                 <!-- <businessGroup>${anypoint.org}</businessGroup> -->
 
                 <!-- Authentication (OAuth) -->
