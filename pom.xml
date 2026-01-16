@@ -86,5 +86,53 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+<profiles>
+  <profile>
+    <id>cloudhub-2.0</id>
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.mule.tools.maven</groupId>
+          <artifactId>mule-maven-plugin</artifactId>
+
+          <configuration>
+            <deployment>
+              <cloudHub2Deployment>
+
+                <!-- Required -->
+                <applicationName>batchnew-demo</applicationName>
+                <runtimeVersion>4.9.12</runtimeVersion>
+                <environment>b20afc88-ff74-418c-a940-eee7bfee0af8</environment>
+				   <businessGroup>c39dc6dd-e124-4390-867b-7b58e9d44727   </businessGroup>
+                <!-- <businessGroup>${anypoint.org}</businessGroup> -->
+
+                <!-- Authentication (OAuth) -->
+                <clientId>e85c250d7185443eaf380821bdd543c9</clientId>
+                <clientSecret>Ec0b12d15A31457bB80B502CeD1b9835</clientSecret>
+
+                <!-- Region & sizing -->
+                <region>us-east-1</region>
+                <replicas>1</replicas>
+                <vCores>0.1</vCores>
+				<releaseChannel>LTS</releaseChannel>
+
+
+                <!-- Optional but recommended -->
+                <persistentQueues>false</persistentQueues>
+                <objectStoreV2>true</objectStoreV2>
+                <logging>
+                  <logLevel>INFO</logLevel>
+                </logging>
+
+              </cloudHub2Deployment>
+            </deployment>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+
+  </profile>
+</profiles>
 
 </project>
