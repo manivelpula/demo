@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="flow-poojaFlow" doc:id="4c96e045-4723-474e-8ce6-25ec35115a4d" >
+		<logger level="INFO" doc:name="Logger" doc:id="6144c5aa-882b-4ff2-a9b6-c5eb8addb8dc" />
+	</flow>
+</mule>
