@@ -1472,8 +1472,18 @@ payload]]></ee:set-payload>
 			</batch:on-complete>
 		</batch:job>
 	</flow>
+	<flow name="batchnew-demoFlow3" doc:id="9474fc61-6143-4909-b76a-8c4619c5bdcf" >
+		<logger level="INFO" doc:name="Logger" doc:id="6e4eacc0-3003-4142-8865-6b26b98a8688" />
+	</flow>
 	<flow name="batchnew-demoFlow1" doc:id="c69f33ea-ca1a-4e6c-8d55-861360ce7422" >
 		<http:listener doc:name="Listener" doc:id="2027bb7e-439e-493e-9f27-4ebab6cfd8d1" config-ref="HTTP_Listener_config" path="/demo"/>
 		<logger level="INFO" doc:name="Logger" doc:id="866a3adf-2767-4b78-b1c4-e636393b8b7f" message="#[payload]"/>
+	</flow>
+	<flow name="batchnew-demoFlow2" doc:id="eeb0c67d-d724-405c-b313-e352614d73c9" >
+		<choice doc:name="Choice" doc:id="d3d30b49-b508-4a64-8b6e-b3a2d1aa45ac" >
+			<when expression="#[payload]">
+				<logger level="INFO" doc:name="Logger" doc:id="5224e624-119c-4222-9f8b-d5df90207d13" />
+			</when>
+		</choice>
 	</flow>
 </mule>
