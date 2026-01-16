@@ -41,7 +41,7 @@ jobs:
           name: mule-application
           path: target/*.jar
       - name: Deploy Mule application to CloudHub 2.0
-        working-directory: demo   # or the folder containing your pom.xml
+       # working-directory: demo   # or the folder containing your pom.xml
         run: |
           mvn clean deploy -Pcloudhub-2.0 \
             -DskipExchangePreDeploy=true \
