@@ -73,7 +73,16 @@
 			<url>https://repository.mulesoft.org/releases/</url>
 			<layout>default</layout>
 		</repository>
+		<distributionManagement>
+    <repository>
+        <id>anypoint-exchange</id>
+        <name>Anypoint Exchange</name>
+        <url>https://maven.anypoint.mulesoft.com/api/v1/maven</url>
+    </repository>
+</distributionManagement>
 	</repositories>
+	
+
 
 	<pluginRepositories>
 		<pluginRepository>
@@ -129,6 +138,29 @@
             </deployment>
           </configuration>
         </plugin>
+		<plugin>
+    <groupId>org.mule.tools.maven</groupId>
+    <artifactId>exchange-mule-maven-plugin</artifactId>
+    <version>0.0.23</version>
+    <executions>
+        <execution>
+            <id>exchange-deploy</id>
+            <phase>deploy</phase>
+            <goals>
+                <goal>exchange-deploy</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <assetName>${project.name}</assetName>
+        <assetVersion>${project.version}</assetVersion>
+        <anypointUsername>YOUR_USERNAME</anypointUsername>
+        <anypointPassword>YOUR_PASSWORD</anypointPassword>
+        <exchangeId>your-exchange-id</exchangeId> <!-- optional -->
+        <assetType>application</assetType> <!-- or connector, template, etc -->
+    </configuration>
+</plugin>
+
       </plugins>
     </build>
 
