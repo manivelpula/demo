@@ -1,8 +1,0 @@
-- name: Build and Deploy Mule App
-  run: |
-    mvn clean deploy -Pcloudhub-2.0 -DmuleDeploy \
-      -Danypoint.client_id=${{ secrets.ANYPOINT_CLIENT_ID }} \
-      -Danypoint.client_secret=${{ secrets.ANYPOINT_CLIENT_SECRET }} \
-      -Danypoint.env=${{ secrets.ANYPOINT_ENV }} \
-      -Danypoint.org="${{ secrets.ANYPOINT_ORG }}"
-  working-directory: batchnew-demo
