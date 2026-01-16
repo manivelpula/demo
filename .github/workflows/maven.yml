@@ -42,7 +42,7 @@ jobs:
           path: target/*.jar
           
       - name: Deploy Mule application to CloudHub 2.0
-        working-directory: demo   # <-- set to your POM directory
+        working-directory: batchnew-demo   # <-- set to your POM directory
         run: |
           mvn clean deploy -Pcloudhub-2.0 \
             -Danypoint.client_id="e85c250d7185443eaf380821bdd543c9" \
