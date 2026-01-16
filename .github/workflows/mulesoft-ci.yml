@@ -1,9 +1,1 @@
-- name: Deploy to CloudHub
-  run: |
-    mvn deploy \
-      -DmuleDeploy \
-      -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} \
-      -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} \
-      -Danypoint.org=${{ secrets.ANYPOINT_ORG }} \
-      -Danypoint.env=${{ secrets.ANYPOINT_ENV }} \
-      -DskipTests
+
