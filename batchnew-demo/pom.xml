@@ -86,5 +86,50 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+<profiles>
+  <profile>
+    <id>cloudhub-2.0</id>
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.mule.tools.maven</groupId>
+          <artifactId>mule-maven-plugin</artifactId>
+
+          <configuration>
+            <deployment>
+              <cloudHub2Deployment>
+
+                <!-- Required -->
+                <applicationName>${project.artifactId}</applicationName>
+                <runtimeVersion>${mule.runtime.version}</runtimeVersion>
+                <environment>${anypoint.env}</environment>
+                <businessGroup>${anypoint.org}</businessGroup>
+
+                <!-- Authentication (OAuth) -->
+                <clientId>${anypoint.client_id}</clientId>
+                <clientSecret>${anypoint.client_secret}</clientSecret>
+
+                <!-- Region & sizing -->
+                <region>us-east-1</region>
+                <replicas>1</replicas>
+                <vCores>0.1</vCores>
+
+                <!-- Optional but recommended -->
+                <persistentQueues>false</persistentQueues>
+                <objectStoreV2>true</objectStoreV2>
+                <logging>
+                  <logLevel>INFO</logLevel>
+                </logging>
+
+              </cloudHub2Deployment>
+            </deployment>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+
+  </profile>
+</profiles>
 
 </project>
