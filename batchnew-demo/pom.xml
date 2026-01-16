@@ -101,19 +101,22 @@
               <cloudHub2Deployment>
 
                 <!-- Required -->
-                <applicationName>${project.artifactId}</applicationName>
-                <runtimeVersion>${mule.runtime.version}</runtimeVersion>
-                <environment>${anypoint.env}</environment>
-                <businessGroup>${anypoint.org}</businessGroup>
+                <applicationName>batchnew-demo</applicationName>
+                <runtimeVersion>4.9.12</runtimeVersion>
+                <environmentb20af>c88-ff74-418c-a940-eee7bfee0af8</environment>
+				   <businessGroup>c39dc6dd-e124-4390-867b-7b58e9d44727   </businessGroup>
+                <!-- <businessGroup>${anypoint.org}</businessGroup> -->
 
                 <!-- Authentication (OAuth) -->
-                <clientId>${anypoint.client_id}</clientId>
-                <clientSecret>${anypoint.client_secret}</clientSecret>
+                <clientId>e85c250d7185443eaf380821bdd543c9</clientId>
+                <clientSecret>Ec0b12d15A31457bB80B502CeD1b9835</clientSecret>
 
                 <!-- Region & sizing -->
                 <region>us-east-1</region>
                 <replicas>1</replicas>
                 <vCores>0.1</vCores>
+				<releaseChannel>LTS</releaseChannel>
+
 
                 <!-- Optional but recommended -->
                 <persistentQueues>false</persistentQueues>
