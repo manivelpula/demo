@@ -1,9 +1,8 @@
-- name: Deploy to CloudHub
+- name: Deploy Mule application to CloudHub 2.0
+  working-directory: demo   # <-- set to your POM directory
   run: |
-    mvn deploy \
-      -DmuleDeploy \
-      -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} \
-      -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} \
-      -Danypoint.org=${{ secrets.ANYPOINT_ORG }} \
-      -Danypoint.env=${{ secrets.ANYPOINT_ENV }} \
-      -DskipTests
+    mvn clean deploy -Pcloudhub-2.0 \
+      -Danypoint.client_id=e85c250d7185443eaf380821bdd543c9 \
+      -Danypoint.client_secret=Ec0b12d15A31457bB80B502CeD1b9835 \
+      -Danypoint.env=Sandbox \
+      -Danypoint.org="c39dc6dd-e124-4390-867b-7b58e9d44727"
